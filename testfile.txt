@@ -1,2 +1,2 @@
 hello all
-line added
+line added.
