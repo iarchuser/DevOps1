@@ -17,5 +17,6 @@ public class TC_LoginTest {
 		driver.manage().window().maximize();
 		
 		Assert.assertEquals("Guru99 Bank Home Page", driver.getTitle());
+		driver.quit();
 	}
 }
