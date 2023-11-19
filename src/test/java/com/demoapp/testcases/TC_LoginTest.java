@@ -13,9 +13,9 @@ public class TC_LoginTest {
 	{
 		System.setProperty("webdriver.chrome.driver", "./Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://demo.guru99.com/v4/index.php");
+		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-		
+		driver.get("https://demo.guru99.com/v4/index.php");
 		Assert.assertEquals("Guru99 Bank Home Page", driver.getTitle());
 		driver.quit();
 	}
